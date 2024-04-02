@@ -5,16 +5,9 @@ body {
     background-attachment: fixed; /* Fija la imagen de fondo al desplazar */
 }
 
-/* Resetear los estilos predeterminados del navegador */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Estilos para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: #f0f0f0;
     color: #333;
 }
@@ -24,7 +17,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center; /* Alineación centrada */
+    text-align: center;
 }
 
 header h1 {
@@ -35,7 +28,6 @@ header h1 {
 /* Estilos para la barra de navegación */
 nav ul {
     list-style-type: none;
-    text-align: center; /* Alineación centrada */
 }
 
 nav ul li {
@@ -51,14 +43,20 @@ nav ul li a {
 
 /* Estilos para el contenido principal */
 main {
-    padding: 20px;
+    display: flex; /* Establece un contenedor flexible */
+    justify-content: space-around; /* Distribuye el espacio entre las secciones */
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan cuando no hay suficiente espacio */
 }
 
-section {
+.horizontal-section {
+    width: calc(33.33% - 20px); /* Ancho de cada sección (33.33% del contenedor menos el margen) */
     margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.horizontal-section h2 {
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -68,6 +66,5 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center; /* Alineación centrada */
+    text-align: center;
 }
-
