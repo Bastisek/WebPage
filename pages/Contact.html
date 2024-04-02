@@ -14,7 +14,7 @@
 
     <section id="contact-form">
         <h2>Formulario de Contacto</h2>
-        <form action="#" method="post">
+        <form id="contactForm" action="#" method="post">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
 
@@ -26,10 +26,13 @@
 
             <button type="submit">Enviar</button>
         </form>
+        <p id="confirmation" style="display: none;">¡Gracias por tu mensaje! Te contactaremos pronto.</p>
     </section>
 
     <footer>
         <p>¡Esperamos escucharte pronto!</p>
     </footer>
+
+    <script src="../js/jsContact.js"></script>
 </body>
 </html>
