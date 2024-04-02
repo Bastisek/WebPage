@@ -1,15 +1,13 @@
+/* Estilos generales */
 body {
+    font-family: 'Roboto Condensed', sans-serif;
     background-image: url('../img/copy-space-cupboards.jpg');
     background-size: cover; /* Ajusta la imagen al tamaño del viewport */
     background-position: center; /* Centra la imagen */
     background-attachment: fixed; /* Fija la imagen de fondo al desplazar */
-}
-
-/* Estilos para el cuerpo de la página */
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Fallback para la imagen de fondo */
     color: #333;
+    padding-top: 20px;
 }
 
 /* Estilos para el encabezado */
@@ -43,17 +41,10 @@ nav ul li a {
 
 /* Estilos para el contenido principal */
 main {
-    display: flex; /* Establece un contenedor flexible */
-    justify-content: space-around; /* Distribuye el espacio entre las secciones */
-    flex-wrap: wrap; /* Permite que las secciones se envuelvan cuando no hay suficiente espacio */
-}
-
-.horizontal-section {
-    width: calc(33.33% - 20px); /* Ancho de cada sección (33.33% del contenedor menos el margen) */
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .horizontal-section h2 {
@@ -67,4 +58,50 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* Consultas de medios para hacer el diseño más responsivo */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+    
+    .horizontal-section h2 {
+        font-size: 18px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
+    margin-top: 20px; /* Agregamos un margen superior al contenedor */
+    margin-bottom: 20px; /* Agregamos un margen inferior al contenedor */
+}
+
+.box {
+    flex: 1; /* Hace que las cajas ocupen el mismo espacio */
+    margin: 0 10px; /* Agrega un margen entre las cajas */
+    padding: 20px; /* Agrega relleno dentro de las cajas */
+    background-color: #f0f0f0; /* Color de fondo */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la imagen */
+    margin-bottom: 20px; /* Agrega espacio inferior al contenedor de la imagen */
+}
+
+.image-container img {
+    max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
+
+    max-height: 700px; /* Establece una altura máxima para la imagen */
 }
