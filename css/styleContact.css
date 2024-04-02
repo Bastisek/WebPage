@@ -67,3 +67,17 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Estilos para el bloque de mensaje */
+#confirmation {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 400px; /* Tamaño máximo del bloque de mensaje */
+    margin: 20px auto; /* Centrar el bloque de mensaje */
+}
+
+#message {
+    resize: none;
+}
