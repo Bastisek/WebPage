@@ -12,12 +12,22 @@ body {
 
 /* Estilos para el encabezado */
 header {
-    background-color: #333;
+    background-color: #997373;
+    align-items: center;
+    justify-content: space-between;
     color: #fff;
     padding: 20px;
     text-align: center;
+    display:flex
+}
+.logo img{
+    width: 75px;
+    margin-right: 10px;
 }
 
+.title{
+    text-align: center;
+}
 header h1 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -54,7 +64,7 @@ main {
 
 /* Estilos para el pie de página */
 footer {
-    background-color: #333;
+    background-color: #997373;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -104,4 +114,5 @@ footer {
     max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
 
     max-height: 700px; /* Establece una altura máxima para la imagen */
+    margin-top: 15px; /*  margen de abajo jijijija*/
 }
