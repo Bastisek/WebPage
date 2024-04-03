@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
-    <link rel="stylesheet" href="../css/styleAbout.css">
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="/css/styleContact.css">
+
 </head>
 <body>
     <header>
@@ -25,46 +33,58 @@
         <p>Nuestro equipo está formado por profesionales altamente cualificados...</p>
     </section>
 
-    <footer>
-        <p>© 2024 - Todos los derechos reservados</p>
-    </footer>
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+ 
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+              <img src="/img/comfortable-workplace-with-computer-table-modern-room-closeup.jpg"
+                  class="d-block w-100 c-img" alt="Slide 1">
+              <div class="carousel-caption top-0 mt-4">
+                  <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p>
+                  <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+                  <h2>Somos un equipo de apasionados creativos con un objetivo común: dar vida a ideas innovadoras a
+                      través del diseño web. Nuestro enfoque se centra en la simplicidad, la funcionalidad y la
+                      estética, trabajando en estrecha colaboración con nuestros clientes para ofrecer soluciones que
+                      superen sus expectativas. Desde el diseño hasta la implementación, nos esforzamos por brindar
+                      resultados excepcionales que impulsen el éxito de cada proyecto. ¡Únete a nosotros en este
+                      emocionante viaje hacia la excelencia digital!</h2>
+              </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
+          <div class="carousel-item c-item">
+              <img src="/img/top-view-desk-concept-with-copy-space.jpg" class="d-block w-100 c-img" alt="Slide 2">
+              <div class="carousel-caption top-0 mt-4">
+                  <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+                  <p class="display-1 fw-bolder text-capitalize">3 available tours</p>
+              </div>
           </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+          <div class="carousel-item c-item">
+              <img src="/img/vista-espacio-trabajo-oficina-desordenado-computadora-personal.jpg"
+                  class="d-block w-100 c-img" alt="Slide 3">
+              <div class="carousel-caption top-0 mt-4">
+                  <p class="text-uppercase fs-3 mt-5">Destination activities</p>
+                  <p class="display-1 fw-bolder text-capitalize">Go glacier hiking</p>
+
+              </div>
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </button>
+      <footer>
+        <p>© 2024 - Todos los derechos reservados</p>
+    </footer>
+  </div>
 </body>
 </html>
