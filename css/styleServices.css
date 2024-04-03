@@ -24,6 +24,51 @@ section {
     box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
 }
 
+
+
+/* Estilos para el header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+
+  .logo img {
+    max-width: 100px;
+  }
+  
+  /* Estilos para el título y el texto */
+  .title {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .title h1 {
+    margin-bottom: 10px;
+  }
+  
+  .title p {
+    margin-top: 0;
+  }
+  
+  /* Estilos para hacer el diseño responsivo */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .logo, .title {
+      flex: auto;
+      margin-bottom: 20px;
+      margin-left:auto;
+    }
+  }
+  
+
+
 h1, h2 {
     color: #333;
 }
