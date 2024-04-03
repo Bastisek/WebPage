@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="../css/styleServices.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <section>
+        <!-- <?php -->
+        $plan = $_GET['plan'];
+        $plan_details = obtenerDetallesDelPlan($plan); // Esta función debería recuperar los detalles del plan desde la base de datos
+        
+        <!-- // Mostrar los detalles del plan -->
+        echo "<h2>{$plan_details['nombre']}</h2>";
+        echo "<p>Precio: {$plan_details['precio']}/mes</p>";
+        echo "<ul>";
+        foreach ($plan_details['caracteristicas'] as $caracteristica) {
+            echo "<li>$caracteristica</li>";
+        }
+        echo "</ul>";
+
+        <!-- // Mostrar opciones de pago -->
+        echo "<h3>Selecciona tu método de pago:</h3>";
+        <!-- Aquí deberías mostrar opciones de pago como tarjeta de crédito, PayPal, etc. -->
+        ?>
+        <form action="procesar_pago.php" method="post">
+            <!-- Campos del formulario para el pago -->
+        </form>
+    </section>
+
+    <footer>
+        <p>¡Comienza hoy mismo y lleva tu portafolio al siguiente nivel!</p>
+    </footer>
+</body>
+</html>
