@@ -6,9 +6,17 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #997373;
     color: #fff;
     padding: 20px;
+    text-align: center;
+}
+.logo img{
+    width: 75px;
+    margin-right: 10px;
+}
+
+.title{
     text-align: center;
 }
 
@@ -59,7 +67,7 @@ button[type="submit"]:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #937373;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -97,3 +105,4 @@ footer {
     filter: brightness(0.6);
     border-radius: 5px; /* Agregar bordes redondeados */
 }
+
