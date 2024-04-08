@@ -1,4 +1,3 @@
-// script.js
 $(document).ready(function() {
     var cart = [];
   
@@ -7,6 +6,13 @@ $(document).ready(function() {
       var name = $(this).data('name');
       var price = Number($(this).data('price'));
       cart.push({ name: name, price: price });
+      showCart();
+    });
+  
+    // Comprar ahora
+    $('.buy-now').click(function() {
+      alert('Compra realizada');
+      cart = [];
       showCart();
     });
   
