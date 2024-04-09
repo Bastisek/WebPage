@@ -106,3 +106,17 @@ footer {
     border-radius: 5px; /* Agregar bordes redondeados */
 }
 
+/* Estilos para el mensaje de éxito */
+#successMessage {
+    display: none;
+    background-color: rgba(0, 128, 0, 0.8); /* Color verde con transparencia */
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    z-index: 9999; /* Para asegurarse de que esté por encima de otros elementos */
+}
