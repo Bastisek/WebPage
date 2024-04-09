@@ -120,3 +120,17 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
     z-index: 9999; /* Para asegurarse de que esté por encima de otros elementos */
 }
+
+/* Estilo para el formulario */
+form {
+    /* Ajusta según sea necesario */
+    margin-bottom: 20px; /* Agrega espacio entre el formulario y el botón de envío */
+}
+
+/* Estilo para los elementos del formulario */
+label,
+input,
+textarea {
+    display: block; /* Asegura que cada elemento se muestre en una línea separada */
+    margin-bottom: 10px; /* Espacio entre cada elemento */
+}
