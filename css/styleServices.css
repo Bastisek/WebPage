@@ -5,11 +5,10 @@ body {
     background-color: #f8f8f8;
 }
 
-header, footer {
-    background-color: #fb8e2100;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+header {
+  color: #fff; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
 }
 
 section {
@@ -83,7 +82,7 @@ li {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 500px;
 }
 
 .view-more {
@@ -107,8 +106,48 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../img/different-shapes-cupboards.jpg'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta real de tu imagen */
+    background-image: url('../img/different-shapes-cupboards.jpg'); 
     background-size: cover; /* Para asegurar que la imagen cubra todo el fondo */
     background-position: center; /* Para centrar la imagen en el fondo */
     background-repeat: no-repeat; /* Para evitar la repetición de la imagen */
 }
+.btn-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.btn-container a {
+  display: inline-block;
+  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  text-decoration: none; /* Quita el subrayado del texto */
+  border-radius: 5px; /* Borde redondeado */
+  transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.btn-container a:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+.btn-container a img {
+  width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: 50px;
+  vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+  margin-right: 5px; /* Espacio a la derecha de la imagen */
+}
+
+
+
+footer {
+  background-color: #997373; 
+  color: #fff; 
+  padding: 20px; 
+  text-align: center; 
+  position: fixed; 
+  left: 0; 
+  bottom: 0; 
+  width: 100%; 
+}
+
