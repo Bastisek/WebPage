@@ -120,7 +120,7 @@ body {
 .btn-container a {
   display: inline-block;
   padding: 10px 20px; /* Ajusta el padding según sea necesario */
-  background-color: #007bff; /* Color de fondo del botón */
+  background-color: #ff8d54; /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
   text-decoration: none; /* Quita el subrayado del texto */
   border-radius: 5px; /* Borde redondeado */
@@ -128,7 +128,7 @@ body {
 }
 
 .btn-container a:hover {
-  background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  background-color: #fcd559; /* Cambia el color de fondo al pasar el cursor sobre el botón */
 }
 
 .btn-container a img {
