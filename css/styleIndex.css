@@ -1,15 +1,16 @@
-/* Estilos generales */
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-    background-image: url('../img/copy-space-cupboards.jpg');
-    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Fija la imagen de fondo al desplazar */
-    background-color: #f0f0f0; /* Fallback para la imagen de fondo */
-    color: #333;
-    padding-top: 20px;
-}
+    /* Estilos generales */
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+        background-image: url('../img/copy-space-cupboards.jpg');
+        background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+        background-position: center; /* Centra la imagen */
+        background-attachment: fixed; /* Fija la imagen de fondo al desplazar */
+        background-color: #f0f0f0; /* Fallback para la imagen de fondo */
+        color: #333;
+        padding-top: 20px;
+    }
 
+    /* Estilos para el encabezado */
 /* Estilos para el encabezado */
 header {
     background-color: #997373;
@@ -18,101 +19,120 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    display:flex
-}
-.logo img{
-    width: 100px;
-    margin-right: 10px;
-}
-
-.title{
-    text-align: center;
-}
-header h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-/* Estilos para la barra de navegación */
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-/* Estilos para el contenido principal */
-main {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    flex-direction: row; /* Cambiamos la dirección del flujo a horizontal */
 }
 
-.horizontal-section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
 
-/* Estilos para el pie de página */
-footer {
-    background-color: #997373;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Consultas de medios para hacer el diseño más responsivo */
-@media screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    .logo img {
+        width: 100px;
+        margin-right: 10px;
     }
-}
 
-@media screen and (max-width: 600px) {
+    .title {
+        text-align: center;
+    }
+
     header h1 {
-        font-size: 20px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
-    
+
+    /* Estilos para la barra de navegación */
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
     .horizontal-section h2 {
-        font-size: 18px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
-}
 
-.container {
-    display: flex;
-    justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
-    margin-top: 20px; /* Agregamos un margen superior al contenedor */
-    margin-bottom: 20px; /* Agregamos un margen inferior al contenedor */
-}
+    /* Estilos para el pie de página */
+    footer {
+        background-color: #997373;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
 
-.box {
-    flex: 1; /* Hace que las cajas ocupen el mismo espacio */
-    margin: 0 10px; /* Agrega un margen entre las cajas */
-    padding: 20px; /* Agrega relleno dentro de las cajas */
-    background-color: #f0f0f0; /* Color de fondo */
-    border-radius: 5px; /* Borde redondeado */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
-}
+    /* Consultas de medios para hacer el diseño más responsivo */
+    @media screen and (max-width: 768px) {
+        header {
+            flex-direction: column; /* Cambiamos la dirección del encabezado */
+        }
 
-.image-container {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente la imagen */
-    margin-bottom: 20px; /* Agrega espacio inferior al contenedor de la imagen */
-}
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
 
-.image-container img {
-    max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
+        main {
+            flex-direction: column; /* Cambiamos la dirección del contenido principal */
+        }
 
-    max-height: 700px; /* Establece una altura máxima para la imagen */
-    margin-top: 15px; /*  margen de abajo jijijija*/
-}
+        .container {
+            flex-direction: column; /* Cambiamos la dirección del contenedor */
+        }
+
+        .box {
+            margin: 10px 0; /* Modificamos el margen */
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        header h1 {
+            font-size: 20px;
+        }
+
+        .horizontal-section h2 {
+            font-size: 18px;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
+        margin-top: 20px; /* Agregamos un margen superior al contenedor */
+        margin-bottom: 20px; /* Agregamos un margen inferior al contenedor */
+    }
+
+    .box {
+        flex: 1; /* Hace que las cajas ocupen el mismo espacio */
+        margin: 0 10px; /* Agrega un margen entre las cajas */
+        padding: 20px; /* Agrega relleno dentro de las cajas */
+        background-color: #f0f0f0; /* Color de fondo */
+        border-radius: 5px; /* Borde redondeado */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente la imagen */
+        margin-bottom: 20px; /* Agrega espacio inferior al contenedor de la imagen */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
+        max-height: 700px; /* Establece una altura máxima para la imagen */
+        margin-top: 15px; /* margen de abajo jijijija */
+    }
