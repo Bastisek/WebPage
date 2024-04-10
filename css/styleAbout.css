@@ -83,3 +83,9 @@ footer {
     filter: brightness(0.6);
     border-radius: 5px; /* Agregar bordes redondeados */
 }
+
+.carousel-inner img {
+    max-width: auto; /* Define el ancho máximo al que se mostrarán las imágenes */
+    height: 500px; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+    
+}
