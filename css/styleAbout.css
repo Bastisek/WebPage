@@ -84,8 +84,19 @@ footer {
     border-radius: 5px; /* Agregar bordes redondeados */
 }
 
-.carousel-inner img {
-    max-width: auto; /* Define el ancho máximo al que se mostrarán las imágenes */
-    height: 500px; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
-    
+.carousel-item {
+    height: 475px;
+    min-height: 300px;
+    background: no-repeat bottom bottom scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom bottom;
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo ennegrecido semi-transparente */
+    color: white; /* Color del texto en blanco para mayor contraste */
+    padding: 20px; /* Añade espacio alrededor del texto */
 }
