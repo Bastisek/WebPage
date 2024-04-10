@@ -13,22 +13,22 @@ body {
 /* Estilos para el encabezado */
 header {
     background-color: #997373;
-    align-items: center;
-    justify-content: space-between;
     color: #fff;
-    padding: 20px;
+    padding: 7px;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Cambiamos la dirección del flujo a vertical */
+    align-items: center; /* Centramos horizontalmente */
 }
 
 .logo img {
     width: 100px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Ajustamos el margen inferior del logo */
 }
 
 .title {
-    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Cambiamos la fuente del título a Montserrat u otra fuente profesional */
+    font-size: 36px; /* Tamaño del título */
 }
 
 header h1 {
@@ -57,6 +57,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start; /* Alineamos los elementos al inicio */
     margin-top: 20px;
 }
 
@@ -80,7 +81,7 @@ footer {
 /* Consultas de medios para hacer el diseño más responsivo */
 @media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: column; /* Cambiamos la dirección del encabezado a vertical */
     }
 
     nav ul li {
@@ -89,7 +90,8 @@ footer {
     }
 
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Cambiamos la dirección del contenedor a vertical */
+        align-items: center; /* Centramos horizontalmente en dispositivos más pequeños */
     }
 
     .box {
