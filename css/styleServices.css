@@ -1,116 +1,95 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  background-image: url('../img/different-shapes-cupboards.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* Estilos para el encabezado */
 header {
-  color: #fff; /* Color del texto */
-  padding: 20px; /* Espaciado interno */
-  text-align: center; /* Alineación del texto */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* Estilos para el logo */
+.logo {
+  order: -1; /* Cambia el orden de aparición en la disposición de flexbox */
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+/* Estilos para el título */
+.title {
+  flex: 2; /* Ocupa el doble de espacio que los otros elementos */
+  text-align: center;
+}
+
+.title h1 {
+  margin-bottom: 10px;
+}
+
+.title p {
+  margin-top: 0;
+}
+
+/* Estilos para las secciones */
 section {
-    background-color: #ffffffdc;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    float: left; /* Hace que las secciones aparezcan una al lado de la otra */
-    width: calc(33.33% - 40px); /* Ancho del 33.33% del contenedor, menos el espacio de margen */
-    margin-right: 20px; /* Margen derecho para separar las secciones */
-    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+  background-color: #ffffffdc;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  float: left;
+  width: calc(33.33% - 40px);
+  margin-right: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Agrega un margen inferior para separar las secciones */
 }
 
-
-
-/* Estilos para el header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-
-
-  .logo img {
-    max-width: 100px;
-  }
-  
-  /* Estilos para el título y el texto */
-  .title {
-    flex: 2;
-    text-align: center;
-  }
-  
-  .title h1 {
-    margin-bottom: 10px;
-  }
-  
-  .title p {
-    margin-top: 0;
-  }
-  
-  /* Estilos para hacer el diseño responsivo */
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-      text-align: center;
-    }
-    
-    .logo, .title {
-      flex: auto;
-      margin-bottom: 20px;
-      margin-left:auto;
-    }
-  }
-  
-
-
-h1, h2 {
-    color: #333;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    padding: 5px 0;
-}
-
+/* Estilos para el footer */
 footer {
-    margin-top: 500px;
+  background-color: #997373;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1; /* Ajusta el z-index para que el footer esté sobre otros elementos */
+  margin-top: 20px; /* Agrega un margen superior para separar el footer de las cajas */
 }
 
+/* Estilos para los enlaces de "Ver más" */
 .view-more {
-    text-align: center;
+  text-align: center;
 }
 
 .view-more a {
-    color: #333;
-    text-decoration: none;
-    border: 1px solid #333;
-    padding: 5px 10px;
-    border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .view-more a:hover {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('../img/different-shapes-cupboards.jpg'); 
-    background-size: cover; /* Para asegurar que la imagen cubra todo el fondo */
-    background-position: center; /* Para centrar la imagen en el fondo */
-    background-repeat: no-repeat; /* Para evitar la repetición de la imagen */
-}
+/* Estilos para los botones en el contenedor */
 .btn-container {
   position: absolute;
   top: 20px;
@@ -119,35 +98,82 @@ body {
 
 .btn-container a {
   display: inline-block;
-  padding: 10px 20px; /* Ajusta el padding según sea necesario */
-  background-color: #ff8d54; /* Color de fondo del botón */
-  color: white; /* Color del texto del botón */
-  text-decoration: none; /* Quita el subrayado del texto */
-  border-radius: 5px; /* Borde redondeado */
-  transition: background-color 0.3s; /* Transición suave al cambiar de color */
+  padding: 10px 20px;
+  background-color: #ff8d54;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .btn-container a:hover {
-  background-color: #fcd559; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  background-color: #fcd559;
 }
 
 .btn-container a img {
-  width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+  width: 50px;
   height: 50px;
-  vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
-  margin-right: 5px; /* Espacio a la derecha de la imagen */
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
-
-
-footer {
-  background-color: #997373; 
-  color: #fff; 
-  padding: 20px; 
-  text-align: center; 
-  position: fixed; 
-  left: 0; 
-  bottom: 0; 
-  width: 100%; 
+/* Estilos para títulos */
+h1, h2 {
+  color: #333;
 }
 
+/* Estilos para listas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo,
+  .title {
+    order: -1; /* Cambia el orden de aparición en la disposición de flexbox */
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-container {
+    position: static; /* Elimina la posición absoluta para que el botón fluya normalmente */
+    margin-top: 20px; /* Agrega un margen superior para separar el botón del logo */
+  }
+
+  section {
+    width: calc(50% - 40px);
+    margin-bottom: 20px; /* Ajusta el margen inferior para dispositivos más pequeños */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo,
+  .title {
+    order: -1; /* Cambia el orden de aparición en la disposición de flexbox */
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-container {
+    position: static; /* Elimina la posición absoluta para que el botón fluya normalmente */
+    margin-top: 20px; /* Agrega un margen superior para separar el botón del logo */
+  }
+
+  section {
+    width: calc(100% - 40px);
+    margin-bottom: 20px; /* Ajusta el margen inferior para dispositivos más pequeños */
+  }
+}
