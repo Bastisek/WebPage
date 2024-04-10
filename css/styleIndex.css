@@ -1,16 +1,15 @@
-    /* Estilos generales */
-    body {
-        font-family: 'Roboto Condensed', sans-serif;
-        background-image: url('../img/copy-space-cupboards.jpg');
-        background-size: cover; /* Ajusta la imagen al tamaño del viewport */
-        background-position: center; /* Centra la imagen */
-        background-attachment: fixed; /* Fija la imagen de fondo al desplazar */
-        background-color: #f0f0f0; /* Fallback para la imagen de fondo */
-        color: #333;
-        padding-top: 20px;
-    }
+/* Estilos generales */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url('../img/copy-space-cupboards.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f0f0f0;
+    color: #333;
+    padding-top: 20px;
+}
 
-    /* Estilos para el encabezado */
 /* Estilos para el encabezado */
 header {
     background-color: #997373;
@@ -20,119 +19,102 @@ header {
     padding: 20px;
     text-align: center;
     display: flex;
-    flex-direction: row; /* Cambiamos la dirección del flujo a horizontal */
+    flex-direction: row;
 }
 
+.logo img {
+    width: 100px;
+    margin-right: 10px;
+}
 
-    .logo img {
-        width: 100px;
-        margin-right: 10px;
-    }
+.title {
+    text-align: center;
+}
 
-    .title {
-        text-align: center;
-    }
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-    header h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none;
+}
 
-    /* Estilos para la barra de navegación */
-    nav ul {
-        list-style-type: none;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    flex: 1;
+    margin: 10px; /* Aumentamos el margen entre las casillas */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #997373;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Consultas de medios para hacer el diseño más responsivo */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
     }
 
     nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-    }
-
-    /* Estilos para el contenido principal */
-    main {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
-
-    .horizontal-section h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    /* Estilos para el pie de página */
-    footer {
-        background-color: #997373;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-    }
-
-    /* Consultas de medios para hacer el diseño más responsivo */
-    @media screen and (max-width: 768px) {
-        header {
-            flex-direction: column; /* Cambiamos la dirección del encabezado */
-        }
-
-        nav ul li {
-            display: block;
-            margin: 10px 0;
-        }
-
-        main {
-            flex-direction: column; /* Cambiamos la dirección del contenido principal */
-        }
-
-        .container {
-            flex-direction: column; /* Cambiamos la dirección del contenedor */
-        }
-
-        .box {
-            margin: 10px 0; /* Modificamos el margen */
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        header h1 {
-            font-size: 20px;
-        }
-
-        .horizontal-section h2 {
-            font-size: 18px;
-        }
+        display: block;
+        margin: 10px 0;
     }
 
     .container {
-        display: flex;
-        justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
-        margin-top: 20px; /* Agregamos un margen superior al contenedor */
-        margin-bottom: 20px; /* Agregamos un margen inferior al contenedor */
+        flex-direction: column;
     }
 
     .box {
-        flex: 1; /* Hace que las cajas ocupen el mismo espacio */
-        margin: 0 10px; /* Agrega un margen entre las cajas */
-        padding: 20px; /* Agrega relleno dentro de las cajas */
-        background-color: #f0f0f0; /* Color de fondo */
-        border-radius: 5px; /* Borde redondeado */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
     }
 
-    .image-container {
-        display: flex;
-        justify-content: center; /* Centra horizontalmente la imagen */
-        margin-bottom: 20px; /* Agrega espacio inferior al contenedor de la imagen */
+    .box {
+        padding: 15px; /* Reducimos el padding de las casillas en dispositivos más pequeños */
     }
+}
 
-    .image-container img {
-        max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
-        max-height: 700px; /* Establece una altura máxima para la imagen */
-        margin-top: 15px; /* margen de abajo jijijija */
-    }
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 700px;
+    margin-top: 15px;
+}
