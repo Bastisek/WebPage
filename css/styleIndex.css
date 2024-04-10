@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: 'Roboto Condensed', sans-serif;
     background-image: url('../img/copy-space-cupboards.jpg');
@@ -10,25 +9,24 @@ body {
     padding-top: 20px;
 }
 
-/* Estilos para el encabezado */
 header {
     background-color: #997373;
     color: #fff;
     padding: 7px;
     text-align: center;
     display: flex;
-    flex-direction: column; /* Cambiamos la dirección del flujo a vertical */
-    align-items: center; /* Centramos horizontalmente */
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo img {
     width: 100px;
-    margin-bottom: 10px; /* Ajustamos el margen inferior del logo */
+    margin-bottom: 10px;
 }
 
 .title {
-    font-family: 'Montserrat', sans-serif; /* Cambiamos la fuente del título a Montserrat u otra fuente profesional */
-    font-size: 36px; /* Tamaño del título */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
 }
 
 header h1 {
@@ -36,7 +34,6 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Estilos para la barra de navegación */
 nav ul {
     list-style-type: none;
 }
@@ -52,67 +49,20 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Estilos para el contenido principal */
-.container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start; /* Alineamos los elementos al inicio */
-    margin-top: 20px;
-}
-
-.box {
-    flex: 1;
-    margin: 10px; /* Aumentamos el margen entre las casillas */
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para el pie de página */
 footer {
     background-color: #997373;
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-
-/* Consultas de medios para hacer el diseño más responsivo */
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column; /* Cambiamos la dirección del encabezado a vertical */
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .container {
-        flex-direction: column; /* Cambiamos la dirección del contenedor a vertical */
-        align-items: center; /* Centramos horizontalmente en dispositivos más pequeños */
-    }
-
-    .box {
-        margin: 10px 0;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    header h1 {
-        font-size: 20px;
-    }
-
-    .box {
-        padding: 15px; /* Reducimos el padding de las casillas en dispositivos más pequeños */
-    }
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .image-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 60px; /* Ajusta el margen inferior para dejar espacio para el footer */
 }
 
 .image-container img {
