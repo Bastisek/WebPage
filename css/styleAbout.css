@@ -84,8 +84,57 @@ footer {
     border-radius: 5px; /* Agregar bordes redondeados */
 }
 
-.carousel-inner img {
-    max-width: auto; /* Define el ancho máximo al que se mostrarán las imágenes */
-    height: 500px; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
-    
+.carousel-item {
+    height: 475px;
+    min-height: 300px;
+    background: no-repeat bottom bottom scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom bottom;
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo ennegrecido semi-transparente */
+    color: white; /* Color del texto en blanco para mayor contraste */
+    padding: 20px; /* Añade espacio alrededor del texto */
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos para el contenido principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box {
+    flex: 1;
+    margin: 10px; /* Aumentamos el margen entre las casillas */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
