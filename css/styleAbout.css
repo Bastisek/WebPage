@@ -2,25 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    height: 100vh; /* Utiliza altura completa de la ventana */
 }
 
-header {
-    background-color: #997373;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    display:flex
-}
 .logo img{
     width: 75px;
     margin-right: 10px;
 }
 
-.title{
-    text-align: center;
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 header h1 {
     font-size: 24px;
@@ -55,20 +47,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-
-footer {
-    background-color: #997373;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-
-
-
 .c-item {
     height: 700px;
     display: flex; /* Para que los elementos internos se comporten como cajas flexibles */
@@ -85,8 +63,8 @@ footer {
 }
 
 .carousel-item {
-    height: 475px;
-    min-height: 300px;
+    height: 500px;
+    min-height: auto;
     background: no-repeat bottom bottom scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -95,11 +73,6 @@ footer {
     background-position: bottom bottom;
   }
 
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo ennegrecido semi-transparente */
-    color: white; /* Color del texto en blanco para mayor contraste */
-    padding: 20px; /* Añade espacio alrededor del texto */
-}
 
 header h1 {
     font-size: 24px;
@@ -137,4 +110,23 @@ nav ul li a {
     background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #997373;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.carousel-caption {
+    color: black; /* Cambiar el color del texto a negro */
+}
+
+.movido-arriba {
+    margin-top: -20px; /* Puedes ajustar este valor según sea necesario */
 }
