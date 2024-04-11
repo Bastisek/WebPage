@@ -9,43 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Bootstrap Brain Contact Component CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/contacts/contact-1/assets/css/contact-1.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            /* Utiliza altura completa de la ventana */
-        }
-
-.navbar {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .navbar-brand {
-            color: #fff;
-        }
-
-        .navbar-nav .nav-link {
-            color: #fff;
-            transition: color 0.3s;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #ffc107;
-        }
-
-        /* Fondo de pantalla */
-        body {
-            background-image: url('/img/wepik-export-20240411005730l8VL.jpeg');
-            /* Cambia la URL de la imagen de fondo */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/contact.css"> <!-- Agregando archivo CSS externo -->
 </head>
 
 <body>
@@ -127,38 +91,7 @@
         integrity="sha384-LQ03NLeQ91b8LOjb3+gOmG6v0bq9YmtKXkWPVCq+iw14BTZmqp8DBMbjCu1xMlW5"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Validación del formulario
-            $("#contactForm").validate({
-                rules: {
-                    fullname: "required",
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    message: "required"
-                },
-                messages: {
-                    fullname: "Por favor, ingrese su nombre completo",
-                    email: {
-                        required: "Por favor, ingrese su correo electrónico",
-                        email: "Por favor, ingrese un correo electrónico válido"
-                    },
-                    message: "Por favor, ingrese su mensaje"
-                },
-                submitHandler: function (form) {
-                    // Envío del formulario (simulado)
-                    $("#successMessage").fadeIn();
-                    setTimeout(function () {
-                        $("#successMessage").fadeOut();
-                        form.reset();
-                    }, 3000);
-                    return false; // Evita que el formulario se envíe realmente
-                }
-            });
-        });
-    </script>
+    <script src="/js/contact.js"></script> <!-- Agregando archivo JavaScript externo -->
 </body>
 
 </html>
