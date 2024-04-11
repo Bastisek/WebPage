@@ -70,3 +70,8 @@ footer {
     max-height: 700px;
     margin-top: 15px;
 }
+.box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
