@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url('/img/wepik-export-20240411005730l8VL.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Asegura que el fondo cubra al menos el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            flex: 1;
+        }
+
+        .cart {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            margin-bottom: 10px;
+        }
+
+        .btn-checkout {
+            display: none;
+            background-color: #ffc107;
+            border: none;
+            color: #fff;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin: 0 auto; /* Centra el botón horizontalmente */
+            display: block; /* Para asegurar que el margen funcione correctamente */
+        }
+
+        .btn-checkout:hover {
+            background-color: #ffae00;
+        }
+
+        .plan {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .plan img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .plan-description {
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portafolio Web</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/About.html">Acerca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/fix/servicesfix.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/Contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="plan" id="basic-plan">
+                    <h2>Plan Básico</h2>
+                    <img src="/img/basiclogo.webp" alt="Plan Básico">
+                    <p>GRATIS</p>
+                    <p class="plan-description">Página web personalizada con hasta 5 secciones.<br>Diseño responsivo para una óptima visualización en dispositivos móviles y de escritorio.<br>Galería de hasta 20 imágenes para mostrar tus trabajos.<br>Formulario de contacto para que los visitantes puedan comunicarse contigo fácilmente.<br>Integración con redes sociales para promover tu presencia en línea.</p>
+                    <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="plan" id="professional-plan">
+                    <h2>Plan Profesional</h2>
+                    <img src="/img/profesionallogo.webp" alt="Plan Profesional">
+                    <p>Precio: $15/mes</p>
+                    <p class="plan-description">Página web personalizada con hasta 10 secciones.<br>Galería de hasta 50 imágenes y 10 videos para exhibir tus proyectos.<br>Blog integrado para compartir noticias, opiniones y consejos con tu audiencia.<br>SEO avanzado para mejorar la visibilidad en los motores de búsqueda.<br>Soporte prioritario para resolver consultas de manera rápida y efectiva.</p>
+                    <button class="btn btn-primary btn-checkout" onclick="addToCart('Plan Profesional')">Agregar al Carrito</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="plan" id="premium-plan">
+                    <h2>Plan Premium</h2>
+                    <img src="/img/premiumlogo.webp" alt="Plan Premium">
+                    <p>Precio: $45/mes</p>
+                    <p class="plan-description">Página web personalizada con diseño premium y funcionalidades avanzadas.<br>Galería ilimitada de imágenes y videos para exhibir tu trabajo en su máxima expresión.<br>Integración avanzada de redes sociales y herramientas de análisis para un marketing digital eficaz.<br>Certificado SSL para garantizar la seguridad de tus visitantes.<br>Servicio de copias de seguridad automáticas para proteger tus datos.</p>
+                    <button class="btn btn-primary btn-checkout" onclick="addToCart('Plan Premium')">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <button class="btn btn-checkout" onclick="checkout()">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        let cartItems = [];
+
+        function addToCart(itemName) {
+            cartItems.push(itemName);
+            updateCart();
+        }
+
+        function removeFromCart(index) {
+            cartItems.splice(index, 1);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItemsElement = document.getElementById('cart-items');
+            cartItemsElement.innerHTML = '';
+
+            if (cartItems.length === 0) {
+                cartItemsElement.innerHTML = '<p>El carrito está vacío</p>';
+                document.querySelector('.btn-checkout').style.display = 'none';
+            } else {
+                cartItems.forEach((item, index) => {
+                    const itemElement = document.createElement('div');
+                    itemElement.classList.add('cart-item');
+                    itemElement.innerHTML = `
+                        <p>${item}</p>
+                        <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">Eliminar</button>
+                    `;
+                    cartItemsElement.appendChild(itemElement);
+                });
+                document.querySelector('.btn-checkout').style.display = 'block';
+            }
+        }
+
+        function checkout() {
+            cartItems = [];
+            updateCart();
+            alert('¡Pedido realizado con éxito!');
+        }
+    </script>
+</body>
+
+</html>
